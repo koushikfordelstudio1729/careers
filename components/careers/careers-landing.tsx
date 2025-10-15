@@ -33,6 +33,27 @@ export function CareersLanding() {
 
   return (
     <div className="min-h-screen bg-white">
+      <header className="bg-white border-b border-gray-100">
+        <div className="mx-auto max-w-7xl px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="text-2xl font-bold text-gray-900">
+              Talk2Partners™
+            </div>
+            <div className="flex gap-4">
+              <button 
+                onClick={() => setShowJobs(true)}
+                className="text-gray-600 hover:text-gray-900 font-medium"
+              >
+                VIEW JOBS
+              </button>
+              <a href="#" className="text-gray-600 hover:text-gray-900 font-medium">
+                BLOG
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
       <section className="relative bg-gradient-to-br from-blue-50 to-white">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -46,7 +67,7 @@ export function CareersLanding() {
               <div className="space-y-4">
                 <Button
                   size="lg"
-                  className="text-white px-8 py-4 text-lg"
+                  className="text-white px-8 py-4 text-lg underline cursor-pointer"
                   style={{ backgroundColor: "#006FFD" }}
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.backgroundColor = "#004297")
@@ -58,15 +79,7 @@ export function CareersLanding() {
                 >
                   View Jobs
                 </Button>
-                <div>
-                  <a
-                    href="#"
-                    className="font-medium inline-flex items-center"
-                    style={{ color: "#006FFD" }}
-                  >
-                    Become a Tutor →
-                  </a>
-                </div>
+               
               </div>
             </div>
             <div className="relative">
@@ -92,7 +105,7 @@ export function CareersLanding() {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Billions of people around the world are learning English to unlock
-              economic opportunity for themselves and their families. We give
+              economic opportunity for themselves and their families. Talk2Partners™ gives
               those English learners on-demand access to native English speaking
               tutors to help them reach their full potential.
             </p>
@@ -120,7 +133,7 @@ export function CareersLanding() {
               Fluency in English gives you access to the global English speaking
               economy, and billions of people around the world are working hard
               to master the language. Like any skill, becoming an expert
-              requires constant practice. We make that possible by giving
+              requires constant practice. Talk2Partners™ makes that possible by giving
               English learners on-demand access to native English speaking
               tutors over video chat.
             </p>
@@ -173,7 +186,7 @@ export function CareersLanding() {
                 See us at work
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We are committed to fostering a healthy, happy, and safe work
+                Talk2Partners™ is committed to fostering a healthy, happy, and safe work
                 environment for our diverse team.
               </p>
               <a
