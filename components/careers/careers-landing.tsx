@@ -84,8 +84,8 @@ export function CareersLanding() {
             </div>
             <div className="relative">
               <img
-                src="https://picsum.photos/600/400?random=1"
-                alt="Team members having a conversation"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                alt="Students learning together in a classroom"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>
@@ -198,8 +198,8 @@ export function CareersLanding() {
             </div>
             <div className="relative">
               <img
-                src="https://picsum.photos/600/320?random=2"
-                alt="Large team photo at company event"
+                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Online learning and education technology"
                 className="rounded-lg shadow-xl w-full h-80 object-cover"
               />
             </div>
@@ -208,22 +208,22 @@ export function CareersLanding() {
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             <div className="relative">
               <img
-                src="https://picsum.photos/400/256?random=3"
-                alt="Team meeting in conference room"
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="English language learning books and materials"
                 className="rounded-lg w-full h-64 object-cover"
               />
             </div>
             <div className="relative">
               <img
-                src="https://picsum.photos/400/256?random=4"
-                alt="Team members collaborating"
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Student studying with laptop and books"
                 className="rounded-lg w-full h-64 object-cover"
               />
             </div>
             <div className="relative">
               <img
-                src="https://picsum.photos/400/256?random=5"
-                alt="Team working together"
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Teacher helping student with studies"
                 className="rounded-lg w-full h-64 object-cover"
               />
             </div>
