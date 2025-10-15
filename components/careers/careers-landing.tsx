@@ -90,20 +90,57 @@ export function CareersLanding() {
       <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center space-y-4 mb-16">
-            <p className=" lg:text-3xl text-sm uppercase tracking-wide text-gray-500 font-medium">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
               OUR MISSION
-            </p>
-            <h2 className="text-4xl lg:text-3xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight">
-              Bring high quality English education to every English learner in
-              the world
             </h2>
+           
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Billions of people around the world are learning English to unlock
-              economic opportunity for themselves and their families.
-              Talk2Partners™ gives those English learners on-demand access to
-              native English speaking tutors to help them reach their full
-              potential.
+              Helping Hindi-medium learners speak English in real life
+              situations by practicing with same-level partners and learning
+              from expert guidance.
             </p>
+          </div>
+
+          {/* Image Carousel */}
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-8 bg-white">
+            <div className="flex animate-scroll-horizontal">
+              <div className="flex-shrink-0 w-full flex justify-center items-center min-h-[250px] md:min-h-[300px] lg:min-h-[400px] p-4">
+                <img
+                  src="https://youngguruacademy.com/wp-content/uploads/2023/10/App-Banner-Design-3-2.jpg"
+                  alt="English Learning Platform Banner 1"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full flex justify-center items-center min-h-[250px] md:min-h-[300px] lg:min-h-[400px] p-4">
+                <img
+                  src="https://youngguruacademy.com/wp-content/uploads/2023/10/App-Banner-Design-1-2.jpg"
+                  alt="English Learning Platform Banner 2"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full flex justify-center items-center min-h-[250px] md:min-h-[300px] lg:min-h-[400px] p-4">
+                <img
+                  src="https://youngguruacademy.com/wp-content/uploads/2023/10/App-Banner-Design-4-2.jpg"
+                  alt="English Learning Platform Banner 3"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              {/* Duplicate for seamless loop */}
+              <div className="flex-shrink-0 w-full flex justify-center items-center min-h-[250px] md:min-h-[300px] lg:min-h-[400px] p-4">
+                <img
+                  src="https://youngguruacademy.com/wp-content/uploads/2023/10/App-Banner-Design-3-2.jpg"
+                  alt="English Learning Platform Banner 1"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Navigation dots */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              <div className="w-3 h-3 rounded-full shadow-lg indicator-dot-1 transition-all duration-300"></div>
+              <div className="w-3 h-3 rounded-full shadow-lg indicator-dot-2 transition-all duration-300"></div>
+              <div className="w-3 h-3 rounded-full shadow-lg indicator-dot-3 transition-all duration-300"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -119,7 +156,7 @@ export function CareersLanding() {
               things you can do for someone is to teach them English."
             </blockquote>
             <p className="text-gray-600 font-medium">
-              - Afser Alam Ansari, Founder of Talk2Partners
+              - Afser Alam Ansari, Founder and CEO of Talk2Partners
             </p>
           </div>
 
@@ -234,7 +271,7 @@ export function CareersLanding() {
           <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-pink-200 rounded-full opacity-25 animate-pulse"></div>
           <div className="absolute bottom-10 left-1/3 w-20 h-20 bg-indigo-200 rounded-full opacity-20 animate-bounce"></div>
         </div>
-        
+
         <div className="mx-auto max-w-5xl px-6 text-center relative z-10">
           <div className="mb-8">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6">
@@ -244,8 +281,8 @@ export function CareersLanding() {
               Ready to join us?
             </h2>
             <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Take the next step in your career and help us revolutionize English education worldwide. 
-              Your journey starts here!
+              Take the next step in your career and help us revolutionize
+              English education worldwide. Your journey starts here!
             </p>
           </div>
 
@@ -257,15 +294,35 @@ export function CareersLanding() {
             >
               <Link to="/all-jobs" className="flex items-center space-x-2">
                 <span>VIEW ALL JOBS</span>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </Link>
             </Button>
-            
+
             <button className="text-gray-600 hover:text-gray-900 font-medium flex items-center space-x-2 transition-colors duration-300">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.5a2.5 2.5 0 000-5H9v5zm0 0H7.5A2.5 2.5 0 005 7.5v2.5m0 0v3a2.5 2.5 0 002.5 2.5H9" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.5a2.5 2.5 0 000-5H9v5zm0 0H7.5A2.5 2.5 0 005 7.5v2.5m0 0v3a2.5 2.5 0 002.5 2.5H9"
+                />
               </svg>
               <span>Learn More About Us</span>
             </button>
@@ -278,11 +335,15 @@ export function CareersLanding() {
               <div className="text-gray-600 font-medium">Open Positions</div>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-              <div className="text-3xl font-bold text-purple-600 mb-2">100%</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">
+                100%
+              </div>
               <div className="text-gray-600 font-medium">Remote Friendly</div>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-              <div className="text-3xl font-bold text-pink-600 mb-2">Global</div>
+              <div className="text-3xl font-bold text-pink-600 mb-2">
+                Global
+              </div>
               <div className="text-gray-600 font-medium">Impact Mission</div>
             </div>
           </div>

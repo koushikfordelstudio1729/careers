@@ -315,3 +315,73 @@
 .animation-delay-1000 {
   animation-delay: 1s;
 }
+
+/* Carousel Animation */
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.animate-scroll-horizontal {
+  animation: scrollHorizontal 12s ease-in-out infinite;
+}
+
+/* Carousel Indicator Animations */
+@keyframes indicatorFirst {
+  0%, 33.33% {
+    background-color: #3b82f6;
+    transform: scale(1.2);
+  }
+  33.34%, 100% {
+    background-color: #9ca3af;
+    transform: scale(1);
+  }
+}
+
+@keyframes indicatorSecond {
+  0%, 33.33% {
+    background-color: #9ca3af;
+    transform: scale(1);
+  }
+  33.34%, 66.66% {
+    background-color: #3b82f6;
+    transform: scale(1.2);
+  }
+  66.67%, 100% {
+    background-color: #9ca3af;
+    transform: scale(1);
+  }
+}
+
+@keyframes indicatorThird {
+  0%, 66.66% {
+    background-color: #9ca3af;
+    transform: scale(1);
+  }
+  66.67%, 100% {
+    background-color: #3b82f6;
+    transform: scale(1.2);
+  }
+}
+
+.indicator-dot-1 {
+  animation: indicatorFirst 12s ease-in-out infinite;
+}
+
+.indicator-dot-2 {
+  animation: indicatorSecond 12s ease-in-out infinite;
+}
+
+.indicator-dot-3 {
+  animation: indicatorThird 12s ease-in-out infinite;
+}
