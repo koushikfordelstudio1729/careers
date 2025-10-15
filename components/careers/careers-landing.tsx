@@ -2,35 +2,10 @@
 
 "use client";
 
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { JOBS } from "@/lib/jobs";
-import { JobBrowser } from "@/components/careers/job-browser";
 
 export function CareersLanding() {
-  const [showJobs, setShowJobs] = useState(false);
-
-  if (showJobs) {
-    return (
-      <main className="mx-auto max-w-6xl px-4 py-10 space-y-8">
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-3xl font-semibold text-pretty text-primary">
-              Open Positions
-            </h1>
-            <p className="text-muted-foreground">
-              Join us to build the future. Browse roles and apply today.
-            </p>
-          </div>
-          <Button variant="outline" onClick={() => setShowJobs(false)}>
-            Back to Careers
-          </Button>
-        </div>
-        <JobBrowser jobs={JOBS} />
-      </main>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-white">
       <header className="bg-white border-b border-gray-100">
@@ -39,55 +14,82 @@ export function CareersLanding() {
             <div className="text-2xl font-bold text-gray-900">
               Talk2Partners™
             </div>
-            <div className="flex gap-4">
-              <button 
-                onClick={() => setShowJobs(true)}
-                className="text-gray-600 hover:text-gray-900 font-medium"
-              >
-                VIEW JOBS
-              </button>
-              <a href="#" className="text-gray-600 hover:text-gray-900 font-medium">
-                BLOG
-              </a>
-            </div>
           </div>
         </div>
       </header>
-      
-      <section className="relative bg-gradient-to-br from-blue-50 to-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+      <section className="relative bg-white overflow-hidden">
+        {/* Public Notice Banner */}
+        <div className="bg-purple-50 border border-purple-200 rounded-lg mx-6 mt-8 mb-12 p-4">
+          <div className="flex items-center text-purple-700">
+            <span className="mr-2">📢</span>
+            <span className="font-medium">Public notice from the team</span>
+            <span className="ml-2">→</span>
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Help English learners achieve their full potential
+                Let's build the future of education together
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Join the team
+                Come, join us and together we can transform the way the world learns English.
               </p>
-              <div className="space-y-4">
+              <div className="pt-4">
                 <Button
+                  asChild
                   size="lg"
-                  className="text-white px-8 py-4 text-lg underline cursor-pointer"
-                  style={{ backgroundColor: "#006FFD" }}
+                  className="text-white px-8 py-4 text-lg font-semibold"
+                  style={{ backgroundColor: "#00BFA5" }}
                   onMouseEnter={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#004297")
+                    (e.currentTarget.style.backgroundColor = "#00A693")
                   }
                   onMouseLeave={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#006FFD")
+                    (e.currentTarget.style.backgroundColor = "#00BFA5")
                   }
-                  onClick={() => setShowJobs(true)}
                 >
-                  View Jobs
+                  <Link to="/all-jobs">View all job openings</Link>
                 </Button>
-               
               </div>
             </div>
+            
+            {/* Illustration Section */}
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-                alt="Students learning together in a classroom"
-                className="rounded-lg shadow-xl w-full h-96 object-cover"
-              />
+              <div className="relative w-full h-96 flex items-center justify-center">
+                {/* Background Elements */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Large Blue Circle */}
+                  <div className="w-64 h-32 bg-blue-500 rounded-full transform rotate-12 opacity-90"></div>
+                  
+                  {/* Orange Circle */}
+                  <div className="absolute top-20 left-16 w-16 h-16 bg-orange-400 rounded-full"></div>
+                  
+                  {/* Green Circle */}
+                  <div className="absolute bottom-16 right-12 w-32 h-16 bg-green-400 rounded-full"></div>
+                  
+                  {/* Purple Star */}
+                  <div className="absolute top-8 right-8 w-8 h-8 bg-purple-500 transform rotate-45"></div>
+                  
+                  {/* Books Stack */}
+                  <div className="absolute bottom-8 left-20 space-y-1">
+                    <div className="w-16 h-3 bg-red-400 rounded"></div>
+                    <div className="w-14 h-3 bg-yellow-400 rounded"></div>
+                    <div className="w-18 h-3 bg-blue-400 rounded"></div>
+                  </div>
+                  
+                  {/* Hexagon */}
+                  <div className="absolute top-12 left-32 w-6 h-6 bg-yellow-400 transform rotate-45"></div>
+                  
+                  {/* Study Elements */}
+                  <div className="absolute top-16 right-20 w-8 h-12 bg-brown-400 rounded-sm"></div>
+                  <div className="absolute bottom-20 right-32 w-4 h-4 bg-pink-400 rounded-full"></div>
+                  
+                  {/* Graduation Cap */}
+                  <div className="absolute top-4 left-8 w-6 h-6 bg-gray-800 rounded-sm transform -rotate-12"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -105,9 +107,10 @@ export function CareersLanding() {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Billions of people around the world are learning English to unlock
-              economic opportunity for themselves and their families. Talk2Partners™ gives
-              those English learners on-demand access to native English speaking
-              tutors to help them reach their full potential.
+              economic opportunity for themselves and their families.
+              Talk2Partners™ gives those English learners on-demand access to
+              native English speaking tutors to help them reach their full
+              potential.
             </p>
           </div>
         </div>
@@ -133,9 +136,9 @@ export function CareersLanding() {
               Fluency in English gives you access to the global English speaking
               economy, and billions of people around the world are working hard
               to master the language. Like any skill, becoming an expert
-              requires constant practice. Talk2Partners™ makes that possible by giving
-              English learners on-demand access to native English speaking
-              tutors over video chat.
+              requires constant practice. Talk2Partners™ makes that possible by
+              giving English learners on-demand access to native English
+              speaking tutors over video chat.
             </p>
           </div>
         </div>
@@ -186,8 +189,8 @@ export function CareersLanding() {
                 See us at work
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Talk2Partners™ is committed to fostering a healthy, happy, and safe work
-                environment for our diverse team.
+                Talk2Partners™ is committed to fostering a healthy, happy, and
+                safe work environment for our diverse team.
               </p>
               <a
                 href="#"
@@ -237,6 +240,7 @@ export function CareersLanding() {
             Ready to join us?
           </h2>
           <Button
+            asChild
             size="lg"
             className="text-white px-8 py-4 text-lg"
             style={{ backgroundColor: "#006FFD" }}
@@ -246,9 +250,8 @@ export function CareersLanding() {
             onMouseLeave={(e) =>
               (e.currentTarget.style.backgroundColor = "#006FFD")
             }
-            onClick={() => setShowJobs(true)}
           >
-            VIEW JOBS
+            <Link to="/all-jobs">VIEW JOBS</Link>
           </Button>
           <div className="mt-8">
             <a
