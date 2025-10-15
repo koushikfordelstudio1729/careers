@@ -19,15 +19,6 @@ export function CareersLanding() {
       </header>
 
       <section className="relative bg-white overflow-hidden">
-        {/* Public Notice Banner */}
-        <div className="bg-purple-50 border border-purple-200 rounded-lg mx-6 mt-8 mb-12 p-4">
-          <div className="flex items-center text-purple-700">
-            <span className="mr-2">📢</span>
-            <span className="font-medium">Public notice from the team</span>
-            <span className="ml-2">→</span>
-          </div>
-        </div>
-
         <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
@@ -35,7 +26,8 @@ export function CareersLanding() {
                 Let's build the future of education together
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Come, join us and together we can transform the way the world learns English.
+                Come, join us and together we can transform the way the world
+                learns English.
               </p>
               <div className="pt-4">
                 <Button
@@ -54,7 +46,7 @@ export function CareersLanding() {
                 </Button>
               </div>
             </div>
-            
+
             {/* Illustration Section */}
             <div className="relative">
               <div className="relative w-full h-96 flex items-center justify-center">
@@ -62,30 +54,30 @@ export function CareersLanding() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   {/* Large Blue Circle */}
                   <div className="w-64 h-32 bg-blue-500 rounded-full transform rotate-12 opacity-90"></div>
-                  
+
                   {/* Orange Circle */}
                   <div className="absolute top-20 left-16 w-16 h-16 bg-orange-400 rounded-full"></div>
-                  
+
                   {/* Green Circle */}
                   <div className="absolute bottom-16 right-12 w-32 h-16 bg-green-400 rounded-full"></div>
-                  
+
                   {/* Purple Star */}
                   <div className="absolute top-8 right-8 w-8 h-8 bg-purple-500 transform rotate-45"></div>
-                  
+
                   {/* Books Stack */}
                   <div className="absolute bottom-8 left-20 space-y-1">
                     <div className="w-16 h-3 bg-red-400 rounded"></div>
                     <div className="w-14 h-3 bg-yellow-400 rounded"></div>
                     <div className="w-18 h-3 bg-blue-400 rounded"></div>
                   </div>
-                  
+
                   {/* Hexagon */}
                   <div className="absolute top-12 left-32 w-6 h-6 bg-yellow-400 transform rotate-45"></div>
-                  
+
                   {/* Study Elements */}
                   <div className="absolute top-16 right-20 w-8 h-12 bg-brown-400 rounded-sm"></div>
                   <div className="absolute bottom-20 right-32 w-4 h-4 bg-pink-400 rounded-full"></div>
-                  
+
                   {/* Graduation Cap */}
                   <div className="absolute top-4 left-8 w-6 h-6 bg-gray-800 rounded-sm transform -rotate-12"></div>
                 </div>
@@ -98,10 +90,10 @@ export function CareersLanding() {
       <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center space-y-4 mb-16">
-            <p className="text-sm uppercase tracking-wide text-gray-500 font-medium">
+            <p className=" lg:text-3xl text-sm uppercase tracking-wide text-gray-500 font-medium">
               OUR MISSION
             </p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight">
+            <h2 className="text-4xl lg:text-3xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight">
               Bring high quality English education to every English learner in
               the world
             </h2>

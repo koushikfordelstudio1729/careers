@@ -38,33 +38,47 @@ export default function JobDetailPage() {
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Left Sidebar */}
           <div className="lg:col-span-1 space-y-6">
-            <div className="bg-gray-50 p-4 rounded-lg space-y-4">
-              <div>
-                <h3 className="text-sm font-medium text-gray-500 mb-2">
-                  Location
-                </h3>
-                <p className="text-gray-900">{job.location}</p>
-              </div>
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl shadow-sm border border-gray-200 space-y-6 min-h-[400px] flex flex-col justify-between">
+              <div className="space-y-6">
+                <div className="pb-4 border-b border-gray-200">
+                  <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">
+                    Location
+                  </h3>
+                  <p className="text-lg font-medium text-gray-900 flex items-center">
+                    <span className="mr-2">📍</span>
+                    {job.location}
+                  </p>
+                </div>
 
-              <div>
-                <h3 className="text-sm font-medium text-gray-500 mb-2">
-                  Employment Type
-                </h3>
-                <p className="text-gray-900">{job.type}</p>
-              </div>
+                <div className="pb-4 border-b border-gray-200">
+                  <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">
+                    Employment Type
+                  </h3>
+                  <p className="text-lg font-medium text-gray-900 flex items-center">
+                    <span className="mr-2">💼</span>
+                    {job.type}
+                  </p>
+                </div>
 
-              <div>
-                <h3 className="text-sm font-medium text-gray-500 mb-2">
-                  Department
-                </h3>
-                <p className="text-gray-900">{job.department}</p>
-              </div>
+                <div className="pb-4 border-b border-gray-200">
+                  <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">
+                    Department
+                  </h3>
+                  <p className="text-lg font-medium text-gray-900 flex items-center">
+                    <span className="mr-2">🏢</span>
+                    {job.department}
+                  </p>
+                </div>
 
-              <div>
-                <h3 className="text-sm font-medium text-gray-500 mb-2">
-                  Compensation
-                </h3>
-                <p className="text-gray-900">{job.salary}</p>
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">
+                    Compensation
+                  </h3>
+                  <p className="text-xl font-bold text-green-700 bg-green-50 px-4 py-3 rounded-lg border border-green-200 flex items-center">
+                    <span className="mr-2">💰</span>
+                    {job.salary}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
