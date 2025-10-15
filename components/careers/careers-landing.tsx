@@ -21,19 +21,19 @@ export function CareersLanding() {
       <section className="relative bg-white overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <div className="space-y-8 animate-fade-in-up">
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-slide-in-left">
                 Let's build the future of education together
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed animate-slide-in-left animation-delay-200">
                 Come, join us and together we can transform the way the world
                 learns English.
               </p>
-              <div className="pt-4">
+              <div className="pt-4 animate-slide-in-left animation-delay-400">
                 <Button
                   asChild
                   size="lg"
-                  className="text-white px-8 py-4 text-lg font-semibold"
+                  className="text-white px-8 py-4 text-lg font-semibold hover:scale-105 transition-all duration-300 hover:shadow-lg"
                   style={{ backgroundColor: "#00BFA5" }}
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.backgroundColor = "#00A693")
@@ -48,38 +48,38 @@ export function CareersLanding() {
             </div>
 
             {/* Illustration Section */}
-            <div className="relative">
+            <div className="relative animate-fade-in-right">
               <div className="relative w-full h-96 flex items-center justify-center">
                 {/* Background Elements */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   {/* Large Blue Circle */}
-                  <div className="w-64 h-32 bg-blue-500 rounded-full transform rotate-12 opacity-90"></div>
+                  <div className="w-64 h-32 bg-blue-500 rounded-full transform rotate-12 opacity-90 animate-float-slow"></div>
 
                   {/* Orange Circle */}
-                  <div className="absolute top-20 left-16 w-16 h-16 bg-orange-400 rounded-full"></div>
+                  <div className="absolute top-20 left-16 w-16 h-16 bg-orange-400 rounded-full animate-bounce-slow animation-delay-300"></div>
 
                   {/* Green Circle */}
-                  <div className="absolute bottom-16 right-12 w-32 h-16 bg-green-400 rounded-full"></div>
+                  <div className="absolute bottom-16 right-12 w-32 h-16 bg-green-400 rounded-full animate-pulse-slow animation-delay-500"></div>
 
                   {/* Purple Star */}
-                  <div className="absolute top-8 right-8 w-8 h-8 bg-purple-500 transform rotate-45"></div>
+                  <div className="absolute top-8 right-8 w-8 h-8 bg-purple-500 transform rotate-45 animate-spin-slow animation-delay-700"></div>
 
                   {/* Books Stack */}
-                  <div className="absolute bottom-8 left-20 space-y-1">
+                  <div className="absolute bottom-8 left-20 space-y-1 animate-float animation-delay-200">
                     <div className="w-16 h-3 bg-red-400 rounded"></div>
                     <div className="w-14 h-3 bg-yellow-400 rounded"></div>
                     <div className="w-18 h-3 bg-blue-400 rounded"></div>
                   </div>
 
                   {/* Hexagon */}
-                  <div className="absolute top-12 left-32 w-6 h-6 bg-yellow-400 transform rotate-45"></div>
+                  <div className="absolute top-12 left-32 w-6 h-6 bg-yellow-400 transform rotate-45 animate-wiggle animation-delay-600"></div>
 
                   {/* Study Elements */}
-                  <div className="absolute top-16 right-20 w-8 h-12 bg-brown-400 rounded-sm"></div>
-                  <div className="absolute bottom-20 right-32 w-4 h-4 bg-pink-400 rounded-full"></div>
+                  <div className="absolute top-16 right-20 w-8 h-12 bg-brown-400 rounded-sm animate-float animation-delay-800"></div>
+                  <div className="absolute bottom-20 right-32 w-4 h-4 bg-pink-400 rounded-full animate-bounce-slow animation-delay-1000"></div>
 
                   {/* Graduation Cap */}
-                  <div className="absolute top-4 left-8 w-6 h-6 bg-gray-800 rounded-sm transform -rotate-12"></div>
+                  <div className="absolute top-4 left-8 w-6 h-6 bg-gray-800 rounded-sm transform -rotate-12 animate-float-slow animation-delay-400"></div>
                 </div>
               </div>
             </div>
